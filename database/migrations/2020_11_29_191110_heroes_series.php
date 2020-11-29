@@ -15,7 +15,6 @@ class HeroesSeries extends Migration
     {
         Schema::create('tb_heroes_series', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
             $table->unsignedBigInteger('id_heroes_series');
             $table->unsignedBigInteger('id_series');
             $table->foreign('id_heroes_series')->references('id')->on('tb_heroes');
