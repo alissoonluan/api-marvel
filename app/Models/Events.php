@@ -17,7 +17,7 @@ class Events extends Model
           return $this->_connectionBase->executeWithReturnAll
           ("SELECT e.name FROM tb_events e
                 INNER JOIN tb_heroes_events he ON he.id_events = c.id
-                INNER JOIN tb_heroes        h  ON h.id = he.id_heroes
+                INNER JOIN tb_heroes        h  ON h.id = he.id_heroes_events
             WHERE h.id = $id");        
         }
 }

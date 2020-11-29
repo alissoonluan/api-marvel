@@ -18,7 +18,7 @@ class Stories extends Model
       return $this->_connectionBase->executeWithReturnAll
       ("SELECT s.name FROM tb_stories s
             INNER JOIN tb_heroes_stories hs ON hs.id_stories = c.id
-            INNER JOIN tb_heroes         h  ON h.id = he.id_heroes
+            INNER JOIN tb_heroes         h  ON h.id = he.id_heroes_stories
         WHERE h.id = $id");        
     }
 

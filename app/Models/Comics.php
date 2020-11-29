@@ -17,7 +17,7 @@ class Comics extends Model
       return $this->_connectionBase->executeWithReturnAll
       ("SELECT c.name FROM tb_comics c
             INNER JOIN tb_heroes_comics hc ON hc.id_comics = c.id
-            INNER JOIN tb_heroes        h  ON h.id = hc.id_heroes
+            INNER JOIN tb_heroes        h  ON h.id = hc.id_heroes_comics
         WHERE h.id = $id");        
     }
 

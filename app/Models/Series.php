@@ -18,7 +18,7 @@ class Series extends Model
       return $this->_connectionBase->executeWithReturnAll
       ("SELECT * FROM tb_series s
             INNER JOIN tb_heroes_series hs ON he.id_series = s.id
-            INNER JOIN tb_heroes        h  ON h.id = he.id_heroes
+            INNER JOIN tb_heroes        h  ON h.id = he.id_heroes_series
         WHERE h.id = $id");        
     }
 }
