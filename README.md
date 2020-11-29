@@ -11,7 +11,8 @@ Uma simples API baseada na Api da Marvel.
 2. [Pre-requisites](#preRequisites)
 3. [Installation](#installation)
 4. [Extensions php.ini](#extensionsphp)
-5. [Author](#author)
+5. [Routes](#routes)
+6. [Author](#author)
 
 
 <a name="gettingStarted"/></a>
@@ -49,7 +50,18 @@ Uma simples API baseada na Api da Marvel.
         - extension=pdo_pgsql
         - extension=pdo_sqlite
         - extension=pgsql
+		
+		
+<a name="routes"/></a>
+## Routes
+  - [Alisson Luan](https://br.linkedin.com/in/alissoonluan)		
 
+GET - /v1/public/characters (List all Heroes)
+GET - /v1/public/characters/{characterId} (List Hero selected)
+GET - /v1/public/characters/{characterId}/comics  (List Comics of the Hero selected)
+GET - /v1/public/characters/{characterId}/events  (List Events of the Hero selected)
+GET - /v1/public/characters/{characterId}/series  (List Series of the Hero selected)
+GET - /v1/public/characters/{characterId}/stories (List Stories of the Hero selected)  
 
 <a name="author"/></a>
 ## Author
