@@ -1,50 +1,49 @@
 <?php
 namespace App\Lib;
 /**
- * Classe para retornar o ARRAY padrão das APIs.
+ * Class to return the API's default array.
  * 
- * A estrutura do JSON de retorno é a seguinte:
+ * The JSON return structure:
  * 
  * {
  * 
  *      success: [true/false],
  * 
- *      code: [código erro da ErrorCodes]
+ *      code: [error code of ErrorCodes]
  * 
- *      message: [string com a mensagem desejada],
+ *      message: [string with a desired message],
  * 
- *      data: [array com dados do GET = retorno que foi pedido],
+ *      data: [array with GET data = return what was asked],
  * 
  *      ...
  * 
- *      [/$params]: [array com informações adicionais]
+ *      [/$params]: [array with additional information]
  * 
  * }
  * 
- * Exemplo de uso:
+ * How to use:
  * 
  * dataPrepare::errorMessage(
  * 
- *      "Os seguintes parametros não são experados!",
+ *      "The following parameters were not expected",
  * 
- *      ErrorCodes::COD_PARAMETROS_NAO_ESPERADOS,
+ *      ErrorCodes::COD_PARAMETERS_NOT_EXPECTED,
  * 
  *      array(
  * 
- *          "parametros" => $callback
+ *          "parameters" => $callback
  * 
  *      ),
  * 
  *      $data
  * )
  * 
- * Codigos de retorno: https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
+ * Return codes: https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
  */
 final class dataPrepare {
     private static $_forbidenNames = ['code', 'msg', 'data', 'success'];
 
     private static function getMessage($success, $message, $code, $params=[], $data=[]) {
-        // TODO Qyon: melhorar esse lógica do array
         $retArr = array(
             "success" => $success,
             "code" => $code,

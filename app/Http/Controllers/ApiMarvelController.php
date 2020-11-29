@@ -17,64 +17,62 @@ class ApiMarvelController extends Controller
     public function index()
     {    
        $Heroes    = new Heroes('api_marvel');
-       $allheroes = $heroes->allHeroes();
-
-       if(!$allheroes) {
-           return response()->json(
-              dataPrepare::errorMessage(
-                  "Heroes não encontrados",
-                  ErrorCodes::COD_ERRO_IDENTIFICADO,
-              )
-              ,201);
-           )
-       }
+       $allheroes = $Heroes->allHeroes();
 
        return response()->json(
            dataPrepare::successMessage(
-               '',
-               ErrorCodes::COD_ENVIADO_SUCESSO,
+               $allheroes,
+               ErrorCodes::COD_SUBMITTED_SUCCESSFULLY ,
            )
-       ,201);
+       ,200);
     }
 
-   
 
-    public function getHeroById(Request $Request) {
-        $this->validate($Request, [
-            'id' => 'required'
-        ]);
+    public function getHeroById(Request $request, $id) {
 
         $Heroes = new Heroes();
-        $
+        $ret    = $Heroes->findById($id);
+
+        if(!$ret) {
+            return response()->json(
+               dataPrepare::errorMessage(
+                   "Hero not found",
+                   ErrorCodes::COD_ERROR_NOT_IDENTIFIED ,
+               )
+               ,201);
+            }
+            
+        return response()->json(
+                dataPrepare::successMessage(
+                    $allheroes,
+                    ErrorCodes::COD_SUBMITTED_SUCCESSFULLY ,
+                )
+            ,200);    
+
+
     }
 
-    public function getHeroByIdComics(Request $Request) {
-        $this->validate($Request, [
-            'id' => 'required'
-        ]);
+    public function getHeroByIdComics(Request $Request, $id) {
 
         $Comics = new Comics();
-        $heroComics = $Comics->findByComics($Request->get('id'));
+        $heroComics = $Comics->findByComics($id);
 
     }
 
-    public function getHeroByIdEvents(Request $Request) {
-        $this->validate($Request, [
-            'id' => 'required'
-        ]);
+    public function getHeroByIdEvents(Request $Request, $id) {
 
         $Events     = new Events();
-        $heroEvents = $Events->findByEvents($Request->get('id'));
+        $heroEvents = $Events->findByEvents($id);
 
     }
 
-    public function getHeroByIdSeries(Request $Request) {
+    public function getHeroByIdSeries(Request $Request, $id) {
         $this->validate($Request, [
             'id' => 'required'
         ]);
 
         $Series     = new Series();
-        $heroSeries = $Series->findBySeries($Request->get('id')); 
+        $heroSeries = $Series->findBySeries($id); 
     }
 
     public function getHeroByIdStories(Request $Request) {
@@ -83,7 +81,7 @@ class ApiMarvelController extends Controller
         ]);
 
         $Stories     = new Stories();
-        $heroStories = $Stories->findByStories($Request->get('id'));
+        $heroStories = $Stories->findByStories($id);
 
     }
 }
