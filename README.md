@@ -53,15 +53,13 @@ Uma simples API baseada na Api da Marvel.
 		
 		
 <a name="routes"/></a>
-## Routes
-  - [Alisson Luan](https://br.linkedin.com/in/alissoonluan)		
-
-GET - /v1/public/characters (List all Heroes)
-GET - /v1/public/characters/{characterId} (List Hero selected)
-GET - /v1/public/characters/{characterId}/comics  (List Comics of the Hero selected)
-GET - /v1/public/characters/{characterId}/events  (List Events of the Hero selected)
-GET - /v1/public/characters/{characterId}/series  (List Series of the Hero selected)
-GET - /v1/public/characters/{characterId}/stories (List Stories of the Hero selected)  
+## Routes	
+        - GET /v1/public/characters (List all Heroes)
+        - GET /v1/public/characters/{characterId} (List Hero selected)
+        - GET /v1/public/characters/{characterId}/comics  (List Comics of the Hero selected)
+        - GET /v1/public/characters/{characterId}/events  (List Events of the Hero selected)
+        - GET /v1/public/characters/{characterId}/series  (List Series of the Hero selected)
+        - GET /v1/public/characters/{characterId}/stories (List Stories of the Hero selected)  
 
 <a name="author"/></a>
 ## Author
