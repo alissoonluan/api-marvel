@@ -18,14 +18,16 @@ Uma simples API baseada na Api da Marvel.
 <a name="gettingStarted"/></a>
 ## Getting Started
   - Clone this repository. (git clone https://github.com/alissoonluan/api-marvel.git)
-  - Enter folder
-  - Configure .env file.
-    DB_CONNECTION=pgsql
-    DB_HOST=127.0.0.1
-    DB_PORT=5432
-    DB_DATABASE=api_marvel
-    DB_USERNAME=postgres
-    DB_PASSWORD=apimarvel
+  - Enter the folder
+  - Configure .env file
+  ```
+        DB_CONNECTION=pgsql
+        DB_HOST=127.0.0.1
+        DB_PORT=5432
+        DB_DATABASE=api_marvel
+        DB_USERNAME=postgres
+        DB_PASSWORD=apimarvel
+```
 
 <a name="preRequisites"/></a>
 ### Pre-requisites
