@@ -19,7 +19,7 @@ class HeroesStories extends Migration
             $table->unsignedBigInteger('id_heroes_stories');
             $table->unsignedBigInteger('id_stories');
             $table->foreign('id_heroes_stories')->references('id')->on('tb_heroes');
-            $table->foreign('tb_stories')->references('id')->on('id_stories');
+            $table->foreign('id_stories')->references('id')->on('tb_stories');
         });
     }
 
