@@ -21,6 +21,23 @@ class HeroesSeries extends Migration
             $table->foreign('id_heroes_series')->references('id')->on('tb_heroes');
             $table->foreign('id_series')->references('id')->on('tb_series');
         });
+        $data = [
+            ['id_heroes_series'=>1,'id_series'=>1 ],
+            ['id_heroes_series'=>2,'id_series'=>2 ],
+            ['id_heroes_series'=>3,'id_series'=>3 ],
+            ['id_heroes_series'=>4,'id_series'=>4 ],
+            ['id_heroes_series'=>5,'id_series'=>5 ],
+            ['id_heroes_series'=>3,'id_series'=>6 ],
+            ['id_heroes_series'=>4,'id_series'=>7 ],
+            ['id_heroes_series'=>1,'id_series'=>8 ],
+            ['id_heroes_series'=>2,'id_series'=>9 ],
+            ['id_heroes_series'=>4,'id_series'=>10],
+            ['id_heroes_series'=>2,'id_series'=>3 ],
+            ['id_heroes_series'=>3,'id_series'=>2 ],
+            ['id_heroes_series'=>5,'id_series'=>10]
+        ]; 
+
+        DB::table('tb_heroes_series')->insert($data);
     }
 
     /**

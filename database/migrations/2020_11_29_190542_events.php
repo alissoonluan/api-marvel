@@ -16,9 +16,17 @@ class Events extends Migration
         Schema::create('tb_events', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->rememberToken();
-            $table->timestamps();
         });
+
+        $data = [
+            ['name'=>'Secret Invasion' 	    ],
+            ['name'=>'Chaos War' 			],
+            ['name'=>'Age of Apocalypse' 	],
+            ['name'=>'Annihilation' 		],
+            ['name'=>'Dark Reign' 			]
+        ]; 
+
+        DB::table('tb_events')->insert($data);
     }
 
     /**

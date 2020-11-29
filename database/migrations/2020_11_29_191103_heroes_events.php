@@ -21,6 +21,18 @@ class HeroesEvents extends Migration
             $table->foreign('id_heroes_events')->references('id')->on('tb_heroes');
             $table->foreign('id_events')->references('id')->on('tb_events');
         });
+        $data = [
+            ['id_heroes_events'=>1,'id_events'=>1 ],
+            ['id_heroes_events'=>2,'id_events'=>2 ],
+            ['id_heroes_events'=>3,'id_events'=>3 ],
+            ['id_heroes_events'=>4,'id_events'=>4 ],
+            ['id_heroes_events'=>5,'id_events'=>5 ],
+            ['id_heroes_events'=>3,'id_events'=>2 ],
+            ['id_heroes_events'=>4,'id_events'=>5 ],
+            ['id_heroes_events'=>5,'id_events'=>1 ]
+        ]; 
+
+        DB::table('tb_heroes_events')->insert($data);
     }
 
     /**
