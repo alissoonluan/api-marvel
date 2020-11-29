@@ -14,11 +14,11 @@ class Series extends Model
         $this->_connectionBase = new Connection();
     }
     
-    public function findBySeries() {   
+    public function findBySeries($id) {   
       return $this->_connectionBase->executeWithReturnAll
-      ("SELECT * FROM tb_series s
-            INNER JOIN tb_heroes_series hs ON he.id_series = s.id
-            INNER JOIN tb_heroes        h  ON h.id = he.id_heroes_series
+      ("SELECT s.name FROM tb_series s
+            INNER JOIN tb_heroes_series hs ON hs.id_series = s.id
+            INNER JOIN tb_heroes        h  ON h.id = hs.id_heroes_series
         WHERE h.id = $id");        
     }
 }

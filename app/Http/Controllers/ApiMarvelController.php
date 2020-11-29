@@ -120,7 +120,7 @@ class ApiMarvelController extends Controller
             ,200);  
     }
 
-    public function getHeroByIdStories(Request $Request) {
+    public function getHeroByIdStories(Request $Request, $id) {
 
         $Stories     = new Stories();
         $heroStories = $Stories->findByStories($id);
