@@ -7,12 +7,10 @@ use App\ConnectionBase\Connection;
 
 class Heroes extends Model
 {
-    protected $_dbName;
     protected $_connectionBase;
 
-    public function __construct($dbname) {
-        $this->_dbName = $dbname;
-        $this->_connectionBase = new Connection($this->_dbName);
+    public function __construct() {
+        $this->_connectionBase = new Connection();
     }
 
     public function allHeroes() {   

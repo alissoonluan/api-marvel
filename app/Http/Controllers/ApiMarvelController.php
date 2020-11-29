@@ -16,7 +16,7 @@ class ApiMarvelController extends Controller
 {
     public function index()
     {    
-       $Heroes    = new Heroes('api_marvel');
+       $Heroes    = new Heroes();
        $allheroes = $Heroes->allHeroes();
 
        return response()->json(
@@ -41,10 +41,10 @@ class ApiMarvelController extends Controller
                )
                ,201);
             }
-            
+
         return response()->json(
                 dataPrepare::successMessage(
-                    $allheroes,
+                    $ret,
                     ErrorCodes::COD_SUBMITTED_SUCCESSFULLY ,
                 )
             ,200);    
@@ -57,6 +57,22 @@ class ApiMarvelController extends Controller
         $Comics = new Comics();
         $heroComics = $Comics->findByComics($id);
 
+        if(!$heroComics) {
+            return response()->json(
+               dataPrepare::errorMessage(
+                   "Hero not found",
+                   ErrorCodes::COD_ERROR_NOT_IDENTIFIED ,
+               )
+               ,201);
+            }
+
+        return response()->json(
+                dataPrepare::successMessage(
+                    $heroComics,
+                    ErrorCodes::COD_SUBMITTED_SUCCESSFULLY ,
+                )
+            ,200);  
+
     }
 
     public function getHeroByIdEvents(Request $Request, $id) {
@@ -64,24 +80,66 @@ class ApiMarvelController extends Controller
         $Events     = new Events();
         $heroEvents = $Events->findByEvents($id);
 
+        if(!$heroEvents) {
+            return response()->json(
+               dataPrepare::errorMessage(
+                   "Hero not found",
+                   ErrorCodes::COD_ERROR_NOT_IDENTIFIED ,
+               )
+               ,201);
+            }
+
+        return response()->json(
+                dataPrepare::successMessage(
+                    $heroEvents,
+                    ErrorCodes::COD_SUBMITTED_SUCCESSFULLY ,
+                )
+            ,200);  
+
     }
 
     public function getHeroByIdSeries(Request $Request, $id) {
-        $this->validate($Request, [
-            'id' => 'required'
-        ]);
 
         $Series     = new Series();
         $heroSeries = $Series->findBySeries($id); 
+
+        if(!$heroSeries) {
+            return response()->json(
+               dataPrepare::errorMessage(
+                   "Hero not found",
+                   ErrorCodes::COD_ERROR_NOT_IDENTIFIED ,
+               )
+               ,201);
+            }
+
+        return response()->json(
+                dataPrepare::successMessage(
+                    $heroSeries,
+                    ErrorCodes::COD_SUBMITTED_SUCCESSFULLY ,
+                )
+            ,200);  
     }
 
     public function getHeroByIdStories(Request $Request) {
-        $this->validate($Request, [
-            'id' => 'required'
-        ]);
 
         $Stories     = new Stories();
         $heroStories = $Stories->findByStories($id);
+
+        if(!$heroStories) {
+            return response()->json(
+               dataPrepare::errorMessage(
+                   "Hero not found",
+                   ErrorCodes::COD_ERROR_NOT_IDENTIFIED ,
+               )
+               ,201);
+            }
+
+        return response()->json(
+                dataPrepare::successMessage(
+                    $heroStories,
+                    ErrorCodes::COD_SUBMITTED_SUCCESSFULLY ,
+                )
+            ,200);  
 
     }
 }

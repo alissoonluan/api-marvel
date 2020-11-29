@@ -7,20 +7,17 @@ use App\ConnectionBase\Connection;
 
 class Events extends Model
 {
-    
-        protected $_dbName;
         protected $_connectionBase;
     
-        public function __construct($dbname) {
-            $this->_dbName = $dbname;
-            $this->_connectionBase = new Connection($this->_dbName);
+        public function __construct() {
+            $this->_connectionBase = new Connection();
         }
     
         public function findByEvents($id) {   
           return $this->_connectionBase->executeWithReturnAll
           ("SELECT e.name FROM tb_events e
-                INNER JOIN tb_heroes_events he ON he.idevents = c.id
-                INNER JOIN tb_heroes        h  ON h.id = he.idheroes
+                INNER JOIN tb_heroes_events he ON he.id_events = c.id
+                INNER JOIN tb_heroes        h  ON h.id = he.id_heroes
             WHERE h.id = $id");        
         }
 }

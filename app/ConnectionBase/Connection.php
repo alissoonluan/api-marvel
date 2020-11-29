@@ -12,11 +12,11 @@ class Connection {
     protected $_transaction = false;
     protected $_connection;
 
-    function __construct($_dbname) {
+    function __construct() {
         
         $this->_host = env('DB_HOST');
         $this->_user = env('DB_USERNAME');
-        $this->_dbname = $_dbname;
+        $this->_dbname = env('DB_DATABASE');
         $this->_password = env('DB_PASSWORD');
         $this->_port = env('DB_PORT');
     }
