@@ -1,10 +1,10 @@
 
 # Api Marvel
 
-A simple API based on the Marvel's API.
+A API based on the Marvel's API.
 
 ### Tradução
-Uma simples API baseada na Api da Marvel.
+Uma API baseada na Api da Marvel.
 
 ## Table of Contents
 1. [Getting Started](#gettingStarted)
