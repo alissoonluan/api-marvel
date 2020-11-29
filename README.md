@@ -7,11 +7,16 @@ A simple API based on the Marvel's API.
 Uma simples API baseada na Api da Marvel.
 
 ## Table of Contents
-1. [Pre-requisites](#preRequisites)
-2. [Installation](#installation)
-3. [Extensions php.ini](#extensionsphp)
-4. [Author](#author)
+1. [Getting Started](#gettingStarted)
+2. [Pre-requisites](#preRequisites)
+3. [Installation](#installation)
+4. [Extensions php.ini](#extensionsphp)
+5. [Author](#author)
 
+
+<a name="gettingStarted"/></a>
+## Getting Started
+  - Clone this repository. (git clone https://github.com/alissoonluan/api-marvel.git)
 
 <a name="preRequisites"/></a>
 ### Pre-requisites
