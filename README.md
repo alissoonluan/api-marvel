@@ -39,9 +39,14 @@ Api baseada na API da Marvel
      - No pesquisar do Windows digite: editar as variáveis de ambiente do sistema.
      - Ao abrir a tela clique em Variáveis de Ambiente...
      
-![alt tag](./Documentos/Capturar.PNG)     
+![alt tag](../Documentos/variaveis.PNG)
      
      
+    - Clique em Path, depois em editar.
+![alt tag](../Documentos/path.PNG)
+    
+    - Adicione o caminho da Versão do PHP instalado: Exemplo(C:/PHP)
+    
     - PostgreSQL: Apos o download do PostgreSQL, ############
     - Composer: Instale o Composer e vincule ao php instalado.
     - Navegue até a pasta aonde o projeto foi clonado.
@@ -52,6 +57,8 @@ Api baseada na API da Marvel
 ## Rodar API	
         php artisan migrate
         php artisan serve
+        Acesse localhost:8000
+        
         
         
 <a name="testarapi"/></a>
