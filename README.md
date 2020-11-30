@@ -1,18 +1,14 @@
 
 # Api Marvel
 
-A API based on the Marvel's API.
-
-### Tradução
 Uma API baseada na Api da Marvel.
 
 ## Table of Contents
 1. [Getting Started](#gettingStarted)
 2. [Pre-requisites](#preRequisites)
 3. [Installation](#installation)
-4. [Extensions php.ini](#extensionsphp)
-5. [Routes](#routes)
-6. [Author](#author)
+4. [Routes](#routes)
+5. [Author](#author)
 
 
 <a name="gettingStarted"/></a>
@@ -38,13 +34,7 @@ Uma API baseada na Api da Marvel.
   
 ### Installation
     - PHP: place the php folder in c:, open the folder and open the php.ini file, find the extensions below and remove ";".
-    - PostgreSQL: After the installation, create database, CREATE DATABASE api_marvel;
-    - Composer: Installation with php installed.
-    - Laravel: composer
-
-
-<a name="extensionsphp"/></a>
-### Extensions (If you installer php on the my PHP, otherwise skip this step)
+    (If you installer php on the my PHP, otherwise skip this step)
     Enable extension on php.ini
         - extension=mysqli
         - extension=pdo_mysql
@@ -52,7 +42,9 @@ Uma API baseada na Api da Marvel.
         - extension=pdo_pgsql
         - extension=pdo_sqlite
         - extension=pgsql
-		
+    - PostgreSQL: After the installation, create database, CREATE DATABASE api_marvel;
+    - Composer: Installation with php installed.
+    - Laravel: composer install
 		
 <a name="routes"/></a>
 ## Routes	
