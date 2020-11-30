@@ -16,7 +16,7 @@ Api baseada na API da Marvel
 <a name="iniciando"/></a>
 ## Iniciando
   - Clonar o repositório. (git clone https://github.com/alissoonluan/api-marvel.git)
-  - Entre na pasta (cd api-marvel)
+  - Entre na pasta do projecto (cd api-marvel)
   - Configure .env file
   ```
         DB_CONNECTION=pgsql
