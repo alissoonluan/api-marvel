@@ -9,11 +9,13 @@ class Comics extends Model
 {
     protected $_connectionBase;
 
-    public function __construct() {
+    public function __construct() 
+    {
         $this->_connectionBase = new Connection();
     }
 
-    public function findByComics($id) {   
+    public function findByComics($id) 
+    {   
       return $this->_connectionBase->executeWithReturnAll
       ("SELECT c.name FROM tb_comics c
             INNER JOIN tb_heroes_comics hc ON hc.id_comics = c.id

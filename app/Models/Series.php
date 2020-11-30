@@ -10,11 +10,13 @@ class Series extends Model
     
     protected $_connectionBase;
     
-    public function __construct() {
+    public function __construct() 
+    {
         $this->_connectionBase = new Connection();
     }
     
-    public function findBySeries($id) {   
+    public function findBySeries($id) 
+    {   
       return $this->_connectionBase->executeWithReturnAll
       ("SELECT s.name FROM tb_series s
             INNER JOIN tb_heroes_series hs ON hs.id_series = s.id

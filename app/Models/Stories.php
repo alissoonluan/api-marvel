@@ -10,11 +10,13 @@ class Stories extends Model
     
     protected $_connectionBase;
     
-     public function __construct() {
+     public function __construct() 
+     {
      $this->_connectionBase = new Connection();
     }
     
-    public function findByStories($id) {   
+    public function findByStories($id) 
+    {   
  
       return $this->_connectionBase->executeWithReturnAll
       ("SELECT s.name FROM tb_stories s

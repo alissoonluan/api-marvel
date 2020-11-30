@@ -9,11 +9,13 @@ class Events extends Model
 {
         protected $_connectionBase;
     
-        public function __construct() {
+        public function __construct() 
+        {
             $this->_connectionBase = new Connection();
         }
     
-        public function findByEvents($id) {   
+        public function findByEvents($id) 
+        {   
           return $this->_connectionBase->executeWithReturnAll
           ("SELECT e.name FROM tb_events e
                 INNER JOIN tb_heroes_events he ON he.id_events = e.id

@@ -33,61 +33,66 @@ class ApiMarvelController extends Controller
         $Heroes = new Heroes();
         $ret    = $Heroes->findById($id);
 
-        if(!$ret) {
+        if(!$ret) 
+        {
             return response()->json(
                dataPrepare::errorMessage(
                    "Hero not found",
                    ErrorCodes::COD_ERROR_NOT_IDENTIFIED ,
                )
-               ,201);
-            }
+            ,201);
+         }
 
         return response()->json(
-                dataPrepare::successMessage(
-                    $ret,
-                    ErrorCodes::COD_SUBMITTED_SUCCESSFULLY ,
-                )
-            ,200);    
+             dataPrepare::successMessage(
+                $ret,
+                ErrorCodes::COD_SUBMITTED_SUCCESSFULLY ,
+            )
+        ,200);    
 
 
     }
 
-    public function getHeroByComics(Request $Request, $id) {
+    public function getHeroByComics(Request $Request, $id) 
+    {
 
         $Comics     = new Comics();
         $heroComics = $Comics->findByComics($id);
 
-        if(!$heroComics) {
+        if(!$heroComics) 
+        {
             return response()->json(
                dataPrepare::errorMessage(
                    "Hero comics not found",
                    ErrorCodes::COD_ERROR_NOT_IDENTIFIED ,
                )
-               ,201);
-            }
+            ,201);
+        }
 
         return response()->json(
-                dataPrepare::successMessage(
-                    $heroComics,
-                    ErrorCodes::COD_SUBMITTED_SUCCESSFULLY ,
-                )
+            dataPrepare::successMessage(
+                $heroComics,
+                ErrorCodes::COD_SUBMITTED_SUCCESSFULLY ,
+            )
             ,200);  
 
     }
 
-    public function getHeroByEvents(Request $Request, $id) {
+    public function getHeroByEvents(Request $Request, $id) 
+    {
 
         $Events     = new Events();
         $heroEvents = $Events->findByEvents($id);
 
-        if(!$heroEvents) {
+        if(!$heroEvents) 
+        {
             return response()->json(
                dataPrepare::errorMessage(
                    "Hero events not found",
                    ErrorCodes::COD_ERROR_NOT_IDENTIFIED ,
                )
                ,201);
-            }
+        }
 
         return response()->json(
                 dataPrepare::successMessage(
@@ -98,7 +103,8 @@ class ApiMarvelController extends Controller
 
     }
 
-    public function getHeroBySeries(Request $Request, $id) {
+    public function getHeroBySeries(Request $Request, $id) 
+    {
 
         $Series     = new Series();
         $heroSeries = $Series->findBySeries($id); 
@@ -120,7 +126,8 @@ class ApiMarvelController extends Controller
             ,200);  
     }
 
-    public function getHeroByStories(Request $Request, $id) {
+    public function getHeroByStories(Request $Request, $id) 
+    {
 
         $Stories     = new Stories();
         $heroStories = $Stories->findByStories($id);

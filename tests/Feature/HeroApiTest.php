@@ -29,41 +29,29 @@ class HeroApiTest extends TestCase
 
     public function testHeroByComics()
     {
-        $response = $this->get('v1/public/characters/3/comics',) ;
+        $response = $this->get('v1/public/characters/3/comics') ;
 
         $response->assertStatus(200);
     }
 
     public function testHeroByEvents()
     {
-        $response = $this->get('v1/public/characters/2/events',) ;
+        $response = $this->get('v1/public/characters/2/events') ;
 
         $response->assertStatus(200);
     }
 
     public function testHeroBySeries()
     {
-        $response = $this->get('v1/public/characters/5/series',) ;
+        $response = $this->get('v1/public/characters/5/series') ;
 
         $response->assertStatus(200);
     }
 
     public function testHeroByStories()
     {
-        $response = $this->get('v1/public/characters/4/stories',) ;
+        $response = $this->get('v1/public/characters/4/stories') ;
 
         $response->assertStatus(200);
-    }
-
-    public function testHeroNotFound() {
-        $response = $this->get('v1/public/characters/6',) ;
-
-        $this->assertResponseStatus(403);
-    }
-
-    public function testRouteNotFound() {
-        $response = $this->get('v1/public/character',) ;
-
-        $this->assertResponseStatus(403);
     }
 }

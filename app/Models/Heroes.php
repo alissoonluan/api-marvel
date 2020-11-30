@@ -9,11 +9,13 @@ class Heroes extends Model
 {
     protected $_connectionBase;
 
-    public function __construct() {
+    public function __construct() 
+    {
         $this->_connectionBase = new Connection();
     }
 
-    public function allHeroes() {   
+    public function allHeroes() 
+    {   
       return $this->_connectionBase->executeWithReturnAll("SELECT * FROM tb_heroes");        
     }
 
