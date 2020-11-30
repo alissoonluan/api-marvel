@@ -54,7 +54,7 @@ class ApiMarvelController extends Controller
 
     public function getHeroByIdComics(Request $Request, $id) {
 
-        $Comics = new Comics();
+        $Comics     = new Comics();
         $heroComics = $Comics->findByComics($id);
 
         if(!$heroComics) {
