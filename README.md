@@ -36,6 +36,11 @@ Api baseada na API da Marvel
         - extension=pdo_pgsql
         - extension=pgsql
     - É necessário colocar o php nas variaveis de ambiente, segue passo a passo:
+     - No pesquisar do Windows digite: editar as variáveis de ambiente do sistema.
+     - Ao abrir a tela clique em Variáveis de Ambiente...
+     
+![alt tag](./Documentos/Capturar.PNG)     
+     
      
     - PostgreSQL: Apos o download do PostgreSQL, ############
     - Composer: Instale o Composer e vincule ao php instalado.
