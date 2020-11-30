@@ -21,7 +21,7 @@ Fornecemos endpoints com respostas apresentadas em formato JSON.
 4. [Rodar API](#rodarapi)
 5. [Sugestão de Aplicativo para testar a API](#testarapi)
 6. [Error Codes](#errorcode)
-7. [Herois Existentes](#heroesexistente)
+7. [Hérois Existentes](#heroesexistente)
 8. [Rotas](#rotas)
 9. [Autor](#autor)
 
