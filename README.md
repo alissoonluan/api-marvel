@@ -36,7 +36,7 @@ Fornecemos endpoints com respostas apresentadas em formato JSON.
   - PHP 7.3, <a href="https://windows.php.net/downloads/releases/php-7.3.25-nts-Win32-VC15-x64.zip">Download</a>, ou a versão do PHP 7.3 já configurada com as extensões necessárias  <a href="https://wetransfer.com/downloads/eda06f86ea1b02fd5763e8695ce34c5a20201129223605/05969ceda67e89b0202cce34cfac727b20201129223621/4c6d1b?utm_campaign=WT_email_tracking&utm_content=general&utm_medium=download_button&utm_source=notify_recipient_email">Download</a>. 
   - PostgreSQL 10, <a href="https://windows.php.net/downloads/releases/php-7.3.25-nts-Win32-VC15-x64.zip">Download</a>.
   - Composer, <a href="https://getcomposer.org/Composer-Setup.exe">Download</a>.
-  - Laravel 4
+  - Laravel 8
 
 <a name="instalacao"/></a>
 ### Instalação
