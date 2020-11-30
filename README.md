@@ -27,31 +27,34 @@ Api baseada na API da Marvel
 
 <a name="instalacao"/></a>
 ### Instalação
-    - PHP: Extraia o php para o C:, navegue até o arquivo php.ini, procure os arquivos a baixo e retire o  ;.
-    (Se você estiver baixado o meu php, não é necessario habilitar as extensões)
+    - PHP: Extraia o php para o C:, navegue até o arquivo php.ini, procure os arquivos a baixo e apague o ;.
+    (Se você estiver baixado o PHP 7.3 já configurado, não é necessario habilitar as extensões)
     Habilitar extensões do php.ini
-        - extension=mysqli
-        - extension=pdo_mysql
         - extension=pdo_odbc
         - extension=pdo_pgsql
-        - extension=pdo_sqlite
         - extension=pgsql
-    - PostgreSQL: Depois do download do postgreSQL
+    - É necessário colocar o php nas variaveis de ambiente, segue passo a passo:
+     
+    - PostgreSQL: Apos o download do PostgreSQL, ############
     - Composer: Instale o Composer e vincule ao php instalado.
-    - Laravel: na pasta do projeto digite: composer install.
+    - Navegue até a pasta aonde o projeto foi clonado.
+    - Clique com o botão direito do mouse em Git Bash Here.
+    - Laravel: composer install.
 		
 <a name="rodarapi"/></a>
 ## Rodar API	
-        - php artisan migrate
-        - php artisan serve
+        php artisan migrate
+        php artisan serve
+        
+        
         
 <a name="errorcode"/></a>
 ## Error Codes	(Erros Internos para retorno na API)
-          COD_SUBMITTED_SUCCESSFULLY = '2010'; # 2010 - Enviado com sucesso com retorno
-          COD_PARAMETERS_NOT_EXPECTED = '3010'; # 3010 - Parâmetros não esperados
-          COD_INFO_NOT_FOUND = '3031'; # 3031 - Informação não foi encontrada
-          COD_ERROR_NOT_IDENTIFIED = '4040'; # 4040 - Erro não identificado
-          COD_ERROR_IDENTIFIED = '4041'; # 4041 - Erro identificado   
+          2010 - Enviado com sucesso com retorno
+          3010 - Parâmetros não esperados
+          3031 - Informação não foi encontrada
+          4040 - Erro não identificado
+          4041 - Erro identificado   
 
 <a name="rotas"/></a>
 ## Rotas	
