@@ -39,11 +39,11 @@ Api baseada na API da Marvel
      - No pesquisar do Windows digite: editar as variáveis de ambiente do sistema.
      - Ao abrir a tela clique em Variáveis de Ambiente...
      
-![alt tag](../Documentos/variaveis.PNG)
+![alt tag](./prints/variaveis.PNG)
      
      
     - Clique em Path, depois em editar.
-![alt tag](../Documentos/path.PNG)
+![alt tag](./prints/Documentos/path.PNG)
     
     - Adicione o caminho da Versão do PHP instalado: Exemplo(C:/PHP)
     
