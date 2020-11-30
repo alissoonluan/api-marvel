@@ -1,6 +1,6 @@
 ## BEM VINDO aos ENDPOINTS da API da Marvel.
 
-Nossa API tem como objetivo automatizar as pesquisas pelos hérois da Marvel.
+Nossa API tem como objetivo automatizar as pesquisas pelos hérois da Marvel.</br>
 Os ENDPOINTS tem como finalidade listar os hérois e suas categorias, como:
 
 ```
@@ -11,7 +11,8 @@ Os ENDPOINTS tem como finalidade listar os hérois e suas categorias, como:
     - 4 . Histórias
     
     
-```    
+```  
+Fornecemos endpoints com respostas apresentadas em formato JSON.
     
 ## Tópicos
 1. [Iniciando](#iniciando)
