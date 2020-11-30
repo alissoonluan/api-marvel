@@ -3,7 +3,7 @@
 
 Marvel API-based API
 
-##Tradução
+## Tradução
 Api baseada na API da Marvel
 
 
