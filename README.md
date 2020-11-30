@@ -2,12 +2,17 @@
 
 Nossa API tem como objetivo automatizar as pesquisas pelos hérois da Marvel.
 Os ENDPOINTS tem como finalidade listar os hérois e suas categorias, como:
+
+```
+
     - 1 . Histórias em Quadrinhos
     - 2 . Eventos
     - 3 . Séries
     - 4 . Histórias
-
-
+    
+    
+```    
+    
 ## Tópicos
 1. [Iniciando](#iniciando)
 2. [Pré-Requisitos](#prerequisitos)
@@ -40,7 +45,7 @@ Os ENDPOINTS tem como finalidade listar os hérois e suas categorias, como:
         - extension=pdo_odbc
         - extension=pdo_pgsql
         - extension=pgsql
-    - É necessário colocar o php nas variaveis de ambiente, segue passo a passo:
+     - É necessário colocar o php nas variaveis de ambiente, segue passo a passo:
      - No pesquisar do Windows digite: editar as variáveis de ambiente do sistema.
      - Ao abrir a tela clique em Variáveis de Ambiente...
      
