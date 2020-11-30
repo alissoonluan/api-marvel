@@ -38,7 +38,7 @@ Api baseada na API da Marvel
   
 ### Installation
     - PHP: place the php folder in c:, open the folder and open the php.ini file, find the extensions below and remove ";".
-    (If you installer php on the my PHP, otherwise skip this step)
+    (If you installer php on the my PHP, otherwise skip this step below)
     Enable extension on php.ini
         - extension=mysqli
         - extension=pdo_mysql
