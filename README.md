@@ -58,7 +58,7 @@ Fornecemos endpoints com respostas apresentadas em formato JSON.
     
     - Clique em Novo e Adicione o caminho da Versão do PHP instalado: Exemplo(C:/PHP).
     
-    - PostgreSQL: Após o download do PostgreSQL, ############
+    - PostgreSQL: Após o download do PostgreSQL, execute o arquivo create_database.bat, que se encontra na raiz do projeto clonado para criar a database.
     - Composer: Instale o Composer e vincule ao php instalado.
     - Navegue até a pasta aonde o projeto foi clonado.
     - Clique com o botão direito do mouse em Git Bash Here.
