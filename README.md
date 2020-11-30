@@ -11,8 +11,10 @@ Api baseada na API da Marvel
 1. [Getting Started](#gettingStarted)
 2. [Pre-requisites](#preRequisites)
 3. [Installation](#installation)
-4. [Routes](#routes)
-5. [Author](#author)
+4. [Run the API](#runtheapi)
+5. [Error Codes](#errorcode)
+6. [Routes](#routes)
+7. [Author](#author)
 
 
 <a name="gettingStarted"/></a>
@@ -50,6 +52,19 @@ Api baseada na API da Marvel
     - Composer: Installation with php installed.
     - Laravel: composer install
 		
+<a name="runtheapi"/></a>
+## Run	
+        - php artisan migrate
+        - php artisan serve
+        
+<a name="errorcode"/></a>
+## Error Codes	
+          COD_SUBMITTED_SUCCESSFULLY = '2010'; # 2010 - was submitted successfully with return.
+          COD_PARAMETERS_NOT_EXPECTED = '3010'; # 3010 - paramenters not expected
+          COD_INFO_NOT_FOUND = '3031'; # 3031 - Info not found
+          COD_ERROR_NOT_IDENTIFIED = '4040'; # 4040 - Error not identified
+          COD_ERROR_IDENTIFIED = '4041'; # 4041 - Error identified   
+
 <a name="routes"/></a>
 ## Routes	
         - GET /v1/public/characters (List all Heroes)
