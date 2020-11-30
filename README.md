@@ -90,9 +90,9 @@ Api baseada na API da Marvel
 
 <a name="rotas"/></a>
 ## Rotas	
-        - GET /v1/public/characters (Lista todos Herois)
+        - GET /v1/public/characters (Listar todos Hérois)
         - GET /v1/public/characters/{characterId} (Lista Héroi selecionado)
-        - GET /v1/public/characters/{characterId}/comics  (Lista as Histórias em Quadrinho do Héroi)
+        - GET /v1/public/characters/{characterId}/comics  (Lista as Histórias em Quadrinhos do Héroi)
         - GET /v1/public/characters/{characterId}/events  (Lista os eventos do Héroi)
         - GET /v1/public/characters/{characterId}/series  (Lista as Séries do Héroi)
         - GET /v1/public/characters/{characterId}/stories (Lista as Histórias do Héroi)  
