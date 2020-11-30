@@ -12,7 +12,7 @@ Api baseada na API da Marvel
 6. [Error Codes](#errorcode)
 7. [Herois Existentes](#heroesexistente)
 8. [Rotas](#rotas)
-9. [Author](#author)
+9. [Autor](#autor)
 
 
 <a name="iniciando"/></a>
@@ -79,7 +79,7 @@ Api baseada na API da Marvel
         - GET /v1/public/characters/{characterId}/series  (Lista as Séries do Héroi)
         - GET /v1/public/characters/{characterId}/stories (Lista as Histórias do Héroi)  
 
-<a name="author"/></a>
-## Author
+<a name="autor"/></a>
+## Autor
   - [Alisson Luan](https://br.linkedin.com/in/alissoonluan)
 
