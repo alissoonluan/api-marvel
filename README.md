@@ -15,15 +15,16 @@ Os ENDPOINTS tem como finalidade listar os hérois e suas categorias, como:
 Fornecemos endpoints com respostas apresentadas em formato JSON.
     
 ## Tópicos
-1. [Iniciando](#iniciando)
-2. [Pré-Requisitos](#prerequisitos)
-3. [Instalação](#instalacao)
-4. [Rodar API](#rodarapi)
-5. [Sugestão de Aplicativo para testar a API](#testarapi)
-6. [Error Codes](#errorcode)
-7. [Hérois Existentes](#heroesexistente)
-8. [Rotas](#rotas)
-9. [Autor](#autor)
+1.  [Iniciando](#iniciando)
+2.  [Pré-Requisitos](#prerequisitos)
+3.  [Instalação](#instalacao)
+4.  [Rodar API](#rodarapi)
+5.  [Sugestão de Aplicativo para testar a API](#testarapi)
+6.  [Error Codes](#errorcode)
+7.  [Hérois Existentes](#heroesexistente)
+8.  [Rotas](#rotas)
+9.  [Testes Unitários](#testesunitarios)
+10. [Autor](#autor)
 
 
 <a name="iniciando"/></a>
@@ -40,7 +41,7 @@ Fornecemos endpoints com respostas apresentadas em formato JSON.
 
 <a name="instalacao"/></a>
 ### Instalação
-    - PHP: Extraia o php para o C:, navegue até o arquivo php.ini, procure os arquivos a baixo e apague o ;.
+    - PHP: Extraia o php para o C: (Ou o disco de preferência), navegue até o arquivo php.ini, procure os arquivos a baixo e apague o ;.
     (Se você estiver baixado o PHP 7.3 já configurado, não é necessario habilitar as extensões)
     Habilitar extensões do php.ini
         - extension=pdo_odbc
@@ -58,7 +59,7 @@ Fornecemos endpoints com respostas apresentadas em formato JSON.
     
     - Clique em Novo e Adicione o caminho da Versão do PHP instalado: Exemplo(C:/PHP).
     
-    - PostgreSQL: Após o download do PostgreSQL, execute o arquivo create_database.bat, que se encontra na raiz do projeto clonado para criar a database.
+    - PostgreSQL: Após o download do PostgreSQL, execute o arquivo create_database.bat (o caminho para criar o banco está fixo, caso o seu disco local esteja diferente de C, por favor modificar), que se encontra na raiz do projeto clonado para criar a database.
     - Composer: Instale o Composer e vincule ao php instalado.
     - Navegue até a pasta aonde o projeto foi clonado.
     - Clique com o botão direito do mouse em Git Bash Here.
@@ -109,6 +110,14 @@ Fornecemos endpoints com respostas apresentadas em formato JSON.
         - GET /v1/public/characters/{characterId}/events  (Lista os eventos do Héroi)
         - GET /v1/public/characters/{characterId}/series  (Lista as Séries do Héroi)
         - GET /v1/public/characters/{characterId}/stories (Lista as Histórias do Héroi)  
+
+<a name="autor"/></a>
+
+<a name="testesunitarios"/></a>
+## Testes Unitários	
+    - Na pasta raiz do projeto rode o comando: .\vendor\bin\phpunit.bat
+    - Apos isso ele irá testar as rotas e verificar se estão todas ok, caso estiver ok, retornará a seguinte mensagem:
+![alt tag](./prints/testeunitario.PNG)    
 
 <a name="autor"/></a>
 ## Autor
