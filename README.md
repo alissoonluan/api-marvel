@@ -45,7 +45,7 @@ Api baseada na API da Marvel
     - Clique em Path, depois em editar.
 ![alt tag](./prints/pathh.PNG)
     
-    - Adicione o caminho da Versão do PHP instalado: Exemplo(C:/PHP)
+    - Clique em Novo e Adicione o caminho da Versão do PHP instalado: Exemplo(C:/PHP).
     
     - PostgreSQL: Apos o download do PostgreSQL, ############
     - Composer: Instale o Composer e vincule ao php instalado.
