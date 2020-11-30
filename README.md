@@ -42,7 +42,7 @@ Api baseada na API da Marvel
 ![alt tag](./prints/variaveis.PNG)
      
      
-    - Clique em Path, depois em editar.
+    - Clique em Path, depois em Editar.
 ![alt tag](./prints/pathh.PNG)
     
     - Clique em Novo e Adicione o caminho da Versão do PHP instalado: Exemplo(C:/PHP).
