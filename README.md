@@ -58,7 +58,7 @@ Api baseada na API da Marvel
         - php artisan serve
         
 <a name="errorcode"/></a>
-## Error Codes	
+## Error Codes	(Return codes API)
           COD_SUBMITTED_SUCCESSFULLY = '2010'; # 2010 - was submitted successfully with return.
           COD_PARAMETERS_NOT_EXPECTED = '3010'; # 3010 - paramenters not expected
           COD_INFO_NOT_FOUND = '3031'; # 3031 - Info not found
