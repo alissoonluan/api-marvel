@@ -52,7 +52,7 @@ class ApiMarvelController extends Controller
 
     }
 
-    public function getHeroByIdComics(Request $Request, $id) {
+    public function getHeroByComics(Request $Request, $id) {
 
         $Comics     = new Comics();
         $heroComics = $Comics->findByComics($id);
@@ -60,7 +60,7 @@ class ApiMarvelController extends Controller
         if(!$heroComics) {
             return response()->json(
                dataPrepare::errorMessage(
-                   "Hero not found",
+                   "Hero comics not found",
                    ErrorCodes::COD_ERROR_NOT_IDENTIFIED ,
                )
                ,201);
@@ -75,7 +75,7 @@ class ApiMarvelController extends Controller
 
     }
 
-    public function getHeroByIdEvents(Request $Request, $id) {
+    public function getHeroByEvents(Request $Request, $id) {
 
         $Events     = new Events();
         $heroEvents = $Events->findByEvents($id);
@@ -83,7 +83,7 @@ class ApiMarvelController extends Controller
         if(!$heroEvents) {
             return response()->json(
                dataPrepare::errorMessage(
-                   "Hero not found",
+                   "Hero events not found",
                    ErrorCodes::COD_ERROR_NOT_IDENTIFIED ,
                )
                ,201);
@@ -98,7 +98,7 @@ class ApiMarvelController extends Controller
 
     }
 
-    public function getHeroByIdSeries(Request $Request, $id) {
+    public function getHeroBySeries(Request $Request, $id) {
 
         $Series     = new Series();
         $heroSeries = $Series->findBySeries($id); 
@@ -106,7 +106,7 @@ class ApiMarvelController extends Controller
         if(!$heroSeries) {
             return response()->json(
                dataPrepare::errorMessage(
-                   "Hero not found",
+                   "Hero series not found",
                    ErrorCodes::COD_ERROR_NOT_IDENTIFIED ,
                )
                ,201);
@@ -120,7 +120,7 @@ class ApiMarvelController extends Controller
             ,200);  
     }
 
-    public function getHeroByIdStories(Request $Request, $id) {
+    public function getHeroByStories(Request $Request, $id) {
 
         $Stories     = new Stories();
         $heroStories = $Stories->findByStories($id);
@@ -128,7 +128,7 @@ class ApiMarvelController extends Controller
         if(!$heroStories) {
             return response()->json(
                dataPrepare::errorMessage(
-                   "Hero not found",
+                   "Hero stories not found",
                    ErrorCodes::COD_ERROR_NOT_IDENTIFIED ,
                )
                ,201);

@@ -13,7 +13,7 @@ echo CONNECTION LIMIT -1; >> ".\createbase.sql"
 
 
 echo Dropando e recriando banco api_marvel
-SET PGPASSWORD=place123
+SET PGPASSWORD=apimarvel
 "C:\Program Files\PostgreSQL\10\bin\psql.exe" -U postgres -f ".\createbase.sql"
 
 
