@@ -47,7 +47,7 @@ Api baseada na API da Marvel
     
     - Clique em Novo e Adicione o caminho da Versão do PHP instalado: Exemplo(C:/PHP).
     
-    - PostgreSQL: Apos o download do PostgreSQL, ############
+    - PostgreSQL: Após o download do PostgreSQL, ############
     - Composer: Instale o Composer e vincule ao php instalado.
     - Navegue até a pasta aonde o projeto foi clonado.
     - Clique com o botão direito do mouse em Git Bash Here.
