@@ -1,6 +1,11 @@
-## BEM VINDO aos 
+## BEM VINDO aos ENDPOINTS da API da Marvel.
 
-Api baseada na API da Marvel
+Nossa API tem como objetivo automatizar as pesquisas pelos hérois da Marvel.
+Os ENDPOINTS tem como finalidade listar os hérois e suas categorias, como:
+    - 1 . Histórias em Quadrinhos
+    - 2 . Eventos
+    - 3 . Séries
+    - 4 . Histórias
 
 
 ## Tópicos
