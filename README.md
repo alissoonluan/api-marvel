@@ -8,9 +8,11 @@ Api baseada na API da Marvel
 2. [Pré-Requisitos](#prerequisitos)
 3. [Instalação](#instalacao)
 4. [Rodar API](#rodarapi)
-5. [Error Codes](#errorcode)
-6. [Rotas](#rotas)
-7. [Author](#author)
+5. [Sugestão de Aplicativo para testar a API](#testarapi)
+6. [Error Codes](#errorcode)
+7. [Herois Existentes](#heroesexistente)
+8. [Rotas](#rotas)
+9. [Author](#author)
 
 
 <a name="iniciando"/></a>
@@ -47,6 +49,10 @@ Api baseada na API da Marvel
         php artisan serve
         
         
+<a name="testarapi"/></a>
+## Sugestão de Aplicativo para testar a API
+          <a href="https://updates.insomnia.rest/downloads/windows/latest?app=com.insomnia.app&source=website&ref=https%3A%2F%2Fwww.google.com%2F">Insomnia</a>
+        
         
 <a name="errorcode"/></a>
 ## Error Codes	(Erros Internos para retorno na API)
@@ -54,7 +60,15 @@ Api baseada na API da Marvel
           3010 - Parâmetros não esperados
           3031 - Informação não foi encontrada
           4040 - Erro não identificado
-          4041 - Erro identificado   
+          4041 - Erro identificado
+          
+<a name="heroesexistente"/></a>
+## Id de Hérois existentes
+          1 - 3-D Man
+          2 - A-Bomb (HAS)
+          3 - A.I.M.
+          4 - Aaron Stack
+          5 - Abdomination (Emil Blonsky)
 
 <a name="rotas"/></a>
 ## Rotas	
