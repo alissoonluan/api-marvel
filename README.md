@@ -88,7 +88,7 @@ Fornecemos endpoints com respostas apresentadas em formato JSON.
         
 <a name="errorcode"/></a>
 ## Error Codes	(Erros Internos para retorno na API)
-          2010 - Enviado com sucesso o retorno
+          2010 - Enviado com sucesso com retorno
           3010 - Parâmetros não esperados
           3031 - Informação não foi encontrada
           4040 - Erro não identificado
