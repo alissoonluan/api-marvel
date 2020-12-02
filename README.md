@@ -47,6 +47,7 @@ Fornecemos endpoints com respostas apresentadas em formato JSON.
         - extension=pdo_odbc
         - extension=pdo_pgsql
         - extension=pgsql
+        - extension=fileinfo
      - É necessário colocar o php nas variaveis de ambiente, segue passo a passo:
      - No pesquisar do Windows digite: editar as variáveis de ambiente do sistema.
      - Ao abrir a tela clique em Variáveis de Ambiente...
