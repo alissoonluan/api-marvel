@@ -41,7 +41,7 @@ Fornecemos endpoints com respostas apresentadas em formato JSON.
 
 <a name="instalacao"/></a>
 ### Instalação
-    - PHP: Crie uma Pasta no C: (Ou o disco de preferência) e extraia o php, navegue até o arquivo php.ini, procure os arquivos a baixo e apague o ;.
+    - PHP: Crie uma Pasta no C: (Ou o disco de preferência) e extraia o php, navegue até o arquivo php.ini-development e renomeie para php.ini, procure os arquivos a baixo e apague o ;.
     (Se você estiver baixado o PHP 7.3 já configurado, não é necessario habilitar as extensões)
     Habilitar extensões do php.ini
         - extension=pdo_odbc
