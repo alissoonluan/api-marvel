@@ -64,7 +64,7 @@ Fornecemos endpoints com respostas apresentadas em formato JSON.
     - Composer: Instale o Composer e vincule ao php instalado.
     - Navegue até a pasta aonde o projeto foi clonado.
     - Clique com o botão direito do mouse em Git Bash Here.
-    - Laravel: composer update.
+    - Laravel: composer install.
 		
 <a name="rodarapi"/></a>
 ## Rodar API	
